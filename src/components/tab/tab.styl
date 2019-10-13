@@ -1,0 +1,21 @@
+.tab{
+	height: .88rem;
+	line-height: .88rem;
+	font-size: $font14;
+	.tab-item{
+		flex: 1;
+		text-align: center;
+		.tab-link{
+			padding: 0 .1rem;
+			padding-bottom: .1rem;
+			color: $color-text-l;
+			transition color .3s;
+		}
+		&.active-link{
+			.tab-link{
+				color: $cffcd32;
+				border-bottom: 2px solid $cffcd32;
+			}
+		}
+	}
+}

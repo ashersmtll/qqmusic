@@ -1,0 +1,64 @@
+.music-list{
+	height 100%;
+}
+.music-top {
+	height 5.2rem;
+	.music-bg {
+		width 100%;
+		height 5.2rem;
+		background-size 100%;
+		top 0
+		left 0;
+		z-index -1;
+		opacity .5;
+	}
+	.music-title {
+		height .8rem;
+		padding 0 .1rem;
+		font-size $font16;
+		.back {
+			flex: 0 0 .8rem;
+			height .8rem;
+			.icon-back {
+				font-size $font22;
+				color: $cffcd32;
+			}
+		}
+		.title {
+			color $cfff;
+			$no-wrap();
+		}
+	}
+	.play-wapper {
+		bottom .4rem;
+		left calc(50% - 1.3rem);
+		.play {
+			width 2.6rem;
+			border .02rem solid $cffcd32;
+			border-radius .5rem;
+			height .64rem;
+			color: $cffcd32;
+			.icon-play {
+				margin-right .1rem;
+			}
+			.text {
+				font-size $font14;
+			}
+		}
+	}
+	.reload {
+		bottom .4rem;
+		right .4rem;
+		border .02rem solid $cffcd32;
+		color: $cffcd32;
+		padding 0 .1rem;
+		border-radius .1rem;
+	}
+}
+.song-list-wrapper {
+	top 5.2rem;
+	bottom 0;
+	height auto;
+	padding .2rem;
+	width 100%;
+}

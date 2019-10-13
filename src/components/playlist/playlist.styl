@@ -1,0 +1,95 @@
+.playlist{
+	position fixed;
+	left 0;
+	right 0;
+	top 0;
+	bottom 0;
+	z-index 200;
+	background-color $color-background-d;
+	&.list-fade-enter-active, &.list-fade-leave-active{
+		transition opacity 0.3s;
+		.list-wrapper{
+			transition all 0.3s;
+		}
+	}
+	&.list-fade-enter, &.list-fade-leave-to{
+		opacity 0;
+		.list-wrapper{
+			transform translate3d(0, 100%, 0);
+		}
+	}
+	.list-wrapper{
+		position absolute;
+		left 0;
+		bottom 0;
+		width 100%;
+		background-color $c333;
+		.list-header{
+			padding .2rem;
+			.title{
+				.left{
+					flex 1;
+				}
+				.icon{
+					margin-right .2rem;
+					font-size .5rem;
+					color: $cffcd32;
+				}
+				.text{
+					color $color-text-l;
+					margin-right .2rem;
+				}
+				.clear{
+					flex 0 0 .6rem;
+					text-align center;
+					margin-right .2rem;
+					.icon-clear{
+						font-size $font20;
+						color: $color-text-d;
+					}
+				}
+			}
+		}
+		.lists {
+			height 6rem;
+			.item{
+				height .8rem;
+				padding: .2rem;
+				overflow hidden;
+				&.list-enter-active, &.list-leave-active{
+					transition: all 0.1s;
+				}
+				&.list-enter, &.list-leave-to{
+					height: 0;
+				}
+				.current{
+					display block;
+					margin-right .3rem;
+					font-size .4rem;
+					color $cffcd32;
+					width .4rem;
+					height .4rem;
+				}
+				.text{
+					flex: 1;
+					$no-wrap();
+					font-size: $font16;
+					color: $color-text-d;
+					margin-right .2rem;
+				}
+				.delete{
+					flex 0 0 .6rem;
+					text-align center;
+					margin-right .2rem;
+				}
+			}
+		}
+		.list-close{
+			text-align: center;
+			line-height: 50px;
+			background: $root-background;
+			font-size: $font16;
+			color: $color-text-l;
+		}
+	}
+}

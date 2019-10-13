@@ -1,0 +1,37 @@
+.rank {
+	.item-lists {
+		margin-bottom .4rem;
+	}
+	.item-title {
+		$public-title();
+	}
+	.lists {
+		margin 0 .4rem;
+		.list {
+			padding-top .4rem;
+			overflow hidden;
+			.item-img {
+				width 2rem;
+				height 2rem;
+				flex 0 0 2rem;
+			}
+		}
+		.song-list {
+			flex 0 0 calc(100% - 2rem);
+			background $c333;
+			overflow hidden;
+			padding 0 .3rem;
+			.song {
+				line-height .64rem;
+
+			}
+			.num {
+				flex 0 0 .3rem;
+			}
+			.song-name {
+				$no-wrap();
+				font-weight bold;
+			}
+		}
+	}
+}

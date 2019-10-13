@@ -1,0 +1,20 @@
+// 排序 1 默认 2 最新 3 最热 4 评分 5 推荐
+export const listNav = [
+	{name: '国语', id: 165, sortId: 3},
+	{name: '流行', id: 6, sortId: 2},
+	{name: '轻音乐', id: 15, sortId: 4},
+	{name: '经典', id: 136, sortId: 3},
+	{name: '网络歌曲', id: 146, sortId: 3},
+	{name: '影视', id: 133, sortId: 2},
+	{name: 'KTV热歌', id: 141, sortId: 3},
+	{name: '中国风', id: 145, sortId: 3},
+	{name: '古风', id: 194, sortId: 2},
+	{name: '情歌', id: 148, sortId: 3},
+	{name: 'DJ', id: 14, sortId: 3},
+	{name: '伤感', id: 52, sortId: 3},
+	{name: '治愈', id: 116, sortId: 3},
+	{name: '运动', id: 99, sortId: 3},
+	{name: '开车', id: 85, sortId: 3},
+	{name: '咖啡馆', id: 223, sortId: 3},
+	{name: '校园', id: 16, sortId: 3},
+]

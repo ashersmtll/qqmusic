@@ -1,0 +1,24 @@
+.toast {
+	position: fixed;
+	top 40%;
+	left 50%;
+	margin-left -30vw;
+	padding .2rem;
+	width 60vw;
+	min-height 1.5rem;
+	font-size $font14;
+	color $cfff;
+	background-color rgba(0, 0, 0, .8);
+	border-radius .1rem;
+	z-index 999;
+	display flex;
+	justify-content center;
+	align-items  center;
+}
+
+.fade-enter-active, .fade-leave-active {
+	transition .3s ease-out;
+}
+.fade-enter, .fade-leave-to {
+	transform scale(0);
+}

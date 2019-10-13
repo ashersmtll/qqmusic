@@ -1,0 +1,48 @@
+.diss-list {
+	padding-bottom 0 !important;
+}
+.lists-wapper {
+	flex 1;
+	.list-nav {
+		flex 0 0 1.6rem;
+		border-radius 0 .1rem .1rem 0;
+		background $color-background-d;
+		.silder {
+			padding-top .1rem;
+		}
+		.item {
+			padding .1rem .2rem;
+			color $c666;
+			span{
+				font-weight bold;
+			}
+			&.active {
+				color $cffcd32;
+			}
+		}
+	}
+	.list-content {
+		flex 1;
+		background $c333;
+		.content-wapper{
+			padding 0 .2rem;
+		}
+		.list {
+			flex 1;
+			padding .2rem 0;
+		}
+		.song-list {
+			overflow hidden;
+			flex 1;
+		}
+		.item-img {
+			width 1rem;
+			height 1rem;
+			margin-right .18rem;
+		}
+		.song {
+			$no-wrap();
+			color $cfff;
+		}
+	}
+}

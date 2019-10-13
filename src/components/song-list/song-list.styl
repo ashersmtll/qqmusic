@@ -1,0 +1,38 @@
+.song-list {
+	padding 0 .2rem;
+}
+.item {
+	height 1.28rem;
+	.text {
+		flex 0 0 .4rem;
+		height .4rem;
+		text-align center;
+		line-height .4rem;
+		margin-right .4rem;
+		font-size $font16;
+		color $cffcd32;
+	}
+	.content {
+		flex 1;
+		overflow hidden;
+		.name {
+			$no-wrap();
+			color $cfff;
+		}
+		.desc {
+			$no-wrap();
+			margin-top .1rem;
+		}
+	}
+	.action {
+		flex 0 0 1.8rem;
+		margin-left .1rem;
+		color $cffcd32;
+		span {
+			padding .06rem;
+		}
+		.del-song-list, .current-play {
+			color $c666;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.item-lists {
+	.item-title {
+		$public-title();
+	}
+	.lists {
+		padding 0 .3rem;
+	}
+	.item-box {
+		margin 0 .3rem .4rem 0;
+		flex 0 0 30%;
+		width 30%;
+		overflow hidden;
+		&:nth-child(3n) {
+			margin-right 0;
+		}
+		.item-img {
+			width 100%;
+			min-width 2rem;
+			min-height 2rem;
+		}
+		.title {
+			color $cfff;
+			font-size $font14;
+			word-break break-all;
+		}
+		.desc {
+			$no-wrap();
+			display block;
+			width 100%;
+		}
+	}
+}
