@@ -16,7 +16,8 @@ export default {
 		...mapGetters([
 			'showPlayer',
 			'isRadio',
-			'radioPlaying'
+			'radioPlaying',
+			'playing'
 		])
 	},
 	methods: {
@@ -24,9 +25,9 @@ export default {
 		back(){
 			this.$router.go(-1);
 		},
-		// 随机播放 全部
+		// 顺序播放 全部
 		randomAll() {
-			let mode = this.isRadio? playMode.sequence: playMode.random;
+			let mode = this.isRadio? playMode.sequence: playMode.sequence;
 			this.selectAllPlay({list: this.songs, mode});
 		},
 		reloadRadio() {

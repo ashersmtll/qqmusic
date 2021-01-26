@@ -47,7 +47,9 @@ export default {
 		  document.removeEventListener('touchend', this._);
 	  },
     customFontSize() {
-      let fsize = (window.innerWidth || document.documentElement.clientWidth) / 7.5;
+  	  let w = window.innerWidth || document.documentElement.clientWidth,
+      h = window.innerHeight || document.documentElement.clientHeight,
+      fsize = (w >= h? h / 10.24: w / 7.5);
       this.font_size = fsize;
       document.documentElement.style.fontSize = fsize + 'px';
     }

@@ -21,9 +21,10 @@
 	.list-wrapper{
 		position absolute;
 		left 0;
-		bottom 0;
+		bottom $mini-play-height;
 		width 100%;
 		background-color $c333;
+		height 80%;
 		.list-header{
 			padding .2rem;
 			.title{
@@ -51,7 +52,7 @@
 			}
 		}
 		.lists {
-			height 6rem;
+			height calc(100% - 1.9rem);
 			.item{
 				height .8rem;
 				padding: .2rem;
@@ -73,8 +74,8 @@
 				.text{
 					flex: 1;
 					$no-wrap();
-					font-size: $font16;
-					color: $color-text-d;
+					font-size: $font14;
+					color: $color-text-l;
 					margin-right .2rem;
 				}
 				.delete{
@@ -86,7 +87,7 @@
 		}
 		.list-close{
 			text-align: center;
-			line-height: 50px;
+			line-height: 1rem;
 			background: $root-background;
 			font-size: $font16;
 			color: $color-text-l;

@@ -1,7 +1,6 @@
 
 import {mapActions} from 'vuex';
 import {playMode} from '../../common/js/config.js';
-
 import {playerMixin} from '../../common/js/mixin.js';// 与player公用的JS
 import _c from 'lodash/collection.js';
 import _ from 'lodash/array.js';
@@ -24,7 +23,7 @@ export default {
 			let list = this.sequenceList;
 			if (mode === playMode.random) {
 				list = _c.shuffle(list);
-			};
+			}
 			let index = _.findIndex(list, this.currentSong);
 			this.setPlaylist(list);
 			this.setCurrentIndex(index);
@@ -36,13 +35,13 @@ export default {
 		getCurrentIcon(item) { // 正在播放歌曲图标
 			if (item.id === this.currentSong.id) {
 				return 'icon-play';
-			};
+			}
 			return '';
 		},
 		selectItem(item, index) { // 点击播放歌曲
 			if (this.mode === playMode.random) {
 				index = _.findIndex(this.playlist, item);
-			};
+			}
 			this.setCurrentIndex(index);
 		},
 		scrollToCurrent() { // 滚动到正在播放的歌曲位置
@@ -53,10 +52,9 @@ export default {
 			this.deleteSong(item);
 			if (!this.playlist.length) {
 				this.hide();
-			};
+			}
 		},
 		showConfirm() { // 弹出对话框
-
 			this.$confirm('是否清空播放列表', {
 				ok: ($vue) => {
 					this.isShow(!1);

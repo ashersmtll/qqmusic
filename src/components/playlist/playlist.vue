@@ -15,11 +15,11 @@
         <div class="lists pos-rel">
           <scroller ref="scroller">
             <transition-group name="list" tag="ul">
-              <li @click="selectItem(item, index)" ref="listItem" class="item flex-box flex-align-center"
+              <li ref="listItem" class="item flex-box flex-align-center"
                 v-for="(item, index) in sequenceList" :key="item.id"
               >
                 <i class="current" :class="getCurrentIcon(item)"></i>
-                <span class="text">{{item.name}}</span>
+                <span @click="selectItem(item, index)" class="text">{{item.singer}} - {{item.name}}</span>
                 <span class="delete" @click.stop="deleteOne(item)"><i class="icon-delete"></i></span>
               </li>
             </transition-group>

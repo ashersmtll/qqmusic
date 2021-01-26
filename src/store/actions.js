@@ -3,7 +3,7 @@ import {playMode} from '../common/js/config';
 import _ from 'lodash/array.js';
 import _c from 'lodash/collection.js';
 
-// 播放全部 默认随机
+// 播放全部 默认顺序
 export const selectAllPlay = ({commit, state}, {list, mode = playMode.random}) => {
   let oldList = [...state.playlist], oldSeqList = [...state.sequenceList];
   let currentIndex = state.currentIndex;

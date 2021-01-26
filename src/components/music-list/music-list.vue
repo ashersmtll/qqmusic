@@ -12,7 +12,7 @@
         <div class="play flex-box flex-align-center flex-cont-center" @click="randomAll">
           <i class="icon-play"></i>
           <span class="text" v-if="isRadio">播放全部</span>
-          <span class="text" v-else>随机播放全部</span>
+          <span class="text" v-else>{{playing? '添加': '播放'}}全部</span>
         </div>
       </div>
 	    <div class="reload pos-abs" v-if="isRadio" @click="reloadRadio">
