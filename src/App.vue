@@ -70,12 +70,38 @@ export default {
 	.contents{
 		height calc(100% - 1.68rem);
 		overflow-y auto;
+    position absolute;
+    top 1.68rem;
+    left 0;
+    width 100%;
 	}
-	.slide-enter-active, .slide-leave-active{
+/*	.slide-enter-active, .slide-leave-active{
 		transition: all .3s;
 	}
 	.slide-enter, .slide-leave-to{
 		opacity 0
-	}
+	}*/
+  .slide-enter-active{
+    animation fadeInRight .3s;
+  }
+  .slide-leave-active{
+    animation fadeOutLeft .3s;
+  }
+  @keyframes fadeInRight {
+    0% {
+      transform translateX(100%);
+    }
+    to {
+      transform translateX(0);
+    }
+  }
+  @keyframes fadeOutLeft {
+    0% {
+      transform translateX(0);
+    }
+    to {
+      transform translateX(-100%);
+    }
+  }
 </style>
 
