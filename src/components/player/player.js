@@ -190,6 +190,9 @@ export default {
 
 			}
 		},
+		imgError(song) {
+			song.image = require('@/common/image/default.jpg')
+		},
 		...mapMutations({
 			setFullScreen: 'SET_FULL_SCREEN',
 			setRadioPlaying: 'SET_RADIO_PLAYING'

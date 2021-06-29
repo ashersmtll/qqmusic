@@ -18,7 +18,7 @@
 				</div>
 				<div class="mini-img" >
 					<div class="imgWrapper" ref="miniWrapper" @click="downLyc(currentSong.mid)">
-						<img ref="miniImage" :class="rotate" :src="currentSong.image">
+						<img ref="miniImage" :class="rotate" :src="currentSong.image" @error="imgError(currentSong)">
 					</div>
 				</div>
 				<div class="text">

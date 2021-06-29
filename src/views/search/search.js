@@ -14,7 +14,7 @@ export default {
 	data() {
 		return {
 			query: '',
-			placeholder: '输入歌曲、歌手。完成点击左侧放大镜',
+			placeholder: '输入歌曲/歌手后按回车或点击左侧放大镜',
             hotKeys: [],
             songList: [],
 		}
@@ -65,6 +65,9 @@ export default {
                 }): [];
             } else {
                 this.songList = [];
+            }
+            if (!this.songList.length) {
+               this.$toast('本次没有检索出免费歌曲')
             }
         },
 	}

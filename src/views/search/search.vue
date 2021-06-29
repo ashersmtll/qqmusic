@@ -2,9 +2,9 @@
   <div class="search">
     <div class="search-box-wapper">
       <div class="search-box flex-box flex-align-center">
-        <i class="icon-search" @click="submitSearch"></i>
-        <input v-model="query" class="box" :placeholder="placeholder">
-        <i @click="clear" class="icon-dismiss" v-show="query"></i>
+        <i :class="`icon-search ${query !== '' && 'search-color'}`" @click="submitSearch"></i>
+        <input v-model="query" class="box" :placeholder="placeholder" @change.enter="submitSearch">
+        <i @click="clear" :class="`icon-dismiss ${query !== '' && 'icon-clean'}`" v-show="query"></i>
       </div>
     </div>
     <div class="hot-key">
