@@ -21,8 +21,8 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-polyfill": "^6.26.0",
     "style-resources-loader": "^1.2.1",
     "stylus": "^0.54.5",
